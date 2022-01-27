@@ -1,0 +1,21 @@
+Package: hubeau
+Type: Package
+Title: Get data about French watercourses through the Hub'Eau API.
+Version: 0.1.0
+Author: Lise Vaudor
+Maintainer: Lise Vaudor <lise.vaudor@ens-lyon.fr>
+Description: For now this package is focused on the hydrometric data (functions `hm_xxx()`). The full documentation about the API is [here](http://hubeau.eaufrance.fr/page/api-hydrometrie).
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Url: https://perso.ens-lyon.fr/lise.vaudor/Rpackages/hubeau
+Imports: 
+    dplyr,
+    jsonlite,
+    lubridate,
+    purrr
+RoxygenNote: 7.1.2
+Suggests: 
+    rmarkdown,
+    knitr
+VignetteBuilder: knitr

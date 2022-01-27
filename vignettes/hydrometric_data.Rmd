@@ -1,0 +1,35 @@
+---
+title: "hydrometric_data"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{hydrometric_data}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(hubeau)
+```
+
+
+# Get data about hydrometric stations and observations
+
+## Get information about stations
+
+```{r}
+hm_station("K340081001")
+```
+
+## Get information about elaborate observations
+
+```{r}
+hm_obs_elab("K340081001",date_debut="2015-12-15",date_fin="2016-01-27")
+```
+
